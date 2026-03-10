@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>yoganandas CSS Position Example</title>
+
+    <title>CSS Position Example</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            height: 1500px; 
+        }
+
+        .box {
+            width: 150px;
+            height: 100px;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            margin: 20px;
+        }
+
+        .static {
+            position: static;
+            background-color: gray;
+        }
+
+        .relative {
+            position: relative;
+            left: 50px;
+            background-color: blue;
+        }
+
+        .parent {
+            position: relative;
+            height: 200px;
+            background-color: lightgray;
+            margin: 20px;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: red;
+            width: 120px;
+            height: 80px;
+            line-height: 80px;
+        }
+
+        .fixed {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: green;
+            width: 120px;
+            height: 80px;
+            line-height: 80px;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 0;
+            background-color: orange;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1 class="sticky">Sticky Header (Scroll Down)</h1>
+
+    <div class="box static">Static</div>
+
+    <div class="box relative">Relative</div>
+
+    <div class="parent">
+        Parent (Relative)
+        <div class="absolute">Absolute</div>
+    </div>
+
+    <div class="box fixed">Fixed</div>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>yoganandas Data Types Demo</title>
+    <title>JavaScript Data Types Demo</title>
+</head>
+<body>
+    <h2>JavaScript Data Types Example</h2>
+    <pre id="output"></pre>
+
+    <script>
+        let age = 20;
+        let name = "yogananda";
+        let isStudent = true;
+        let city;
+        let phone = null;
+        let person = {
+            name: "nanda",
+            age: 20
+        };
+        let marks = [90, 85, 88];
+
+        // Collect output
+        let result = "";
+        result += "Age: " + age + " | Type: " + typeof age + "\n";
+        result += "Name: " + name + " | Type: " + typeof name + "\n";
+        result += "Is Student: " + isStudent + " | Type: " + typeof isStudent + "\n";
+        result += "City: " + city + " | Type: " + typeof city + "\n";
+        result += "Phone: " + phone + " | Type: " + typeof phone + "\n";
+        result += "Person: " + JSON.stringify(person) + " | Type: " + typeof person + "\n";
+        result += "Marks: " + marks + " | Type: " + typeof marks + "\n";
+        result += "Is Marks an Array? " + Array.isArray(marks) + "\n";
+
+        // Display in browser
+        document.getElementById("output").textContent = result;
+
+        // Also log to console
+        console.log(result);
+    </script>
+</body>
+</html>

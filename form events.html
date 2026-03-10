@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>yoganandas Form Events Example</title>
+    <title>Form Events Example</title>
+    <script>
+        function focusEvent() {
+            document.getElementById("output").innerHTML = "Input Field Focused";
+        }
+
+        function blurEvent() {
+            document.getElementById("output").innerHTML = "Input Field Lost Focus";
+        }
+
+        function changeEvent() {
+            document.getElementById("output").innerHTML = "Input Value Changed";
+        }
+
+        function submitEvent(event) {
+            event.preventDefault(); // Prevent page refresh
+            document.getElementById("output").innerHTML = "Form Submitted";
+        }
+
+        function resetEvent() {
+            document.getElementById("output").innerHTML = "Form Reset";
+        }
+    </script>
+</head>
+<body>
+
+<h3>Form Events Example</h3>
+
+<form onsubmit="submitEvent(event)" onreset="resetEvent()">
+    Name:
+    <input type="text"
+           onfocus="focusEvent()"
+           onblur="blurEvent()"
+           onchange="changeEvent()">
+    <br><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+</form>
+
+<p id="output"></p>
+
+</body>
+</html>

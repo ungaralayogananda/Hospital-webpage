@@ -1,0 +1,14 @@
+<form onsubmit="return check()">
+<input type="text" id="name">
+<input type="submit">
+</form>
+<script>
+function check()
+{
+if(document.getElementById("name").value=="")
+{
+alert("Enter Name");
+return false;
+}
+}
+</script>

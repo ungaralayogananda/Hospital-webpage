@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yogananda's Window Events Example</title>
+
+    <title>Window Events Example</title>
+    <script>
+        // onload event
+        window.onload = function() {
+            alert("Page Loaded Successfully!");
+        };
+        // onresize event
+        window.onresize = function() {
+            document.getElementById("resize").innerHTML = 
+            "Window resized! Width: " + window.innerWidth + 
+            " Height: " + window.innerHeight;
+        };
+
+        // onscroll event
+        window.onscroll = function() {
+            document.getElementById("scroll").innerHTML = 
+            "You are scrolling the page!";
+        };
+
+        // onunload event
+        window.onunload = function() {
+            alert("You are leaving the page!");
+        };
+    </script>
+</head>
+<body style="height:1500px;">
+
+    <h2>Window Events Example</h2>
+
+    <p id="resize"></p>
+    <p id="scroll"></p>
+
+    <p>Scroll down to see scroll event.</p>
+
+</body>
+</html>

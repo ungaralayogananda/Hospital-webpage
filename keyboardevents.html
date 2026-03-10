@@ -1,0 +1,40 @@
+ṇ<!DOCTYPE html>
+<html>
+<head>
+    <title>yoganandas Dynamic Keyboard Events</title>
+
+    <title>Dynamic Keyboard Events</title>
+</head>
+<body>
+
+<h3>Keyboard Events Example</h3>
+
+<input type="text" id="textbox" placeholder="Type something">
+
+<p id="output"></p>
+
+<script>
+
+// Selecting elements
+let textbox = document.getElementById("textbox");
+let output = document.getElementById("output");
+
+// keydown event
+textbox.onkeydown = function() {
+    output.innerHTML = "Key Down Event Triggered";
+};
+
+// keypress event
+textbox.onkeypress = function() {
+    output.innerHTML = "Key Press Event Triggered";
+};
+
+// keyup event
+textbox.onkeyup = function() {
+    output.innerHTML = "Key Up Event Triggered";
+};
+
+</script>
+
+</body>
+</html>

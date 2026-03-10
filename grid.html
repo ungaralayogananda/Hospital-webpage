@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>yoganandas CSS Grid Example</title>
+
+    <title>CSS Grid Example</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr); 
+            grid-template-rows: 100px 100px 100px;
+            gap: 15px; 
+            padding: 20px;
+            background-color: lightgray;
+        }
+
+        .item {
+            background-color: steelblue;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            font-size: 20px;
+        }
+
+        .item1 {
+            grid-column: 1 
+        }
+
+        .item4 {
+            grid-row: 2 
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>CSS Grid Layout Example</h1>
+
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item">2</div>
+        <div class="item item4">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+
+</body>
+</html>
